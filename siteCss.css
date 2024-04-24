@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 100px;
+}
+
+main {
+    color: white;
+    font-weight: lighter;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.float-right {
+    float: right;
+}
+.center {
+    text-align: center;
+}
+.text_center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    width: 40%;
+}
+
+.text_animado {
+    font-size: 70px;
+    font-weight: 300;
+}
+.text_animado span {
+    position: relative;
+}
+.text_animado span::before{
+    content: "";
+    animation: palavras 20s infinite;
+}
+.text_animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid;
+    right: -10px;
+    opacity: 1;
+    animation: cursor .8s infinite;
+}
+
+.text_center_mini {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    width: 15%;
+}
+
+.padrao {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imagem {
+    width: 150px;
+    height: 50px;
+}
+
+.perfil {
+    width: 600px;
+    height: 550px;
+}
+
+.box-degrade{
+    background-image: linear-gradient(to left, blue, orangered, yellow );
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x:0% ;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+@keyframes palavras {
+    0%,25% {
+        content: "eloper jr. of Python";
+    }
+    26%,50% {
+        content: "eloper jr. of HTML and CSS";
+    }
+    51%,75% {
+        content: "eloper jr. of C";
+    }
+    76%,100% {
+        content: "eloper jr. of Ruby";
+    }
+}
+@keyframes cursor {
+    0%{
+        opacity: 0;
+    }
+}
