@@ -5,32 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site do vyctor hugo<span></span></title>
     <link rel="stylesheet" href="./siteCss.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 class="padrao">Meu Site Pessoal</h1>
+        <h1 class="centralizacao">Meu Site Pessoal</h1>
         <nav>
-            <ul>
-                <li><a href="#sobre">Sobre Mim</a></li>
+            <ul class="mobile">
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#competencias">Competencias</a></li>
                 <li><a href="#soft skill">soft skill</a></li>
+                <li><a href="#contato">contato</a></li>
             </ul>
         </nav>
+        <!--criando o menu para o mobile-->
+        <div class="btn-menu" id="btn-abrir-menu">
+            <i> <img class="imagem-btn-menu" src="./imagens/list.svg" alt=""></i>
+        </div>
+        <!--as opçôes do menu-->
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i ><img class="imagem-btn" src="./imagens/x-lg.svg" alt=""></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#competencias">Competencias</a></li>
+                    <li><a href="#soft skill">soft skill</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
-    <main class="box-degrade">
+    <main class="box-degrade" id="main">
         <div>
-            <section class="padrao">
+            <section class="centralizacao">
                 <img class="perfil" src="./imagens/Modelo.jpeg" alt="vyctor hugo"><br>
                 <b><i>Vyctor Hugo da Silva Araújo</i></b>
-            </section>
+            </se    ction>
         </div>
         <div class="center">
             <h1 class="text_animado">dev<span></span></h1>
         </div>
         <div>
-            <section id="sobre" class="padrao">
-                <h2 class="center">Sobre Mim</h2>
+            <section id="sobre" class="centralizacao">
+                <h2 class="center">Sobre</h2>
                 <p class="text_center">Olá! Meu nome é Vyctor Hugo da Silva Araújo, sou aluno de S.I no centro universitário CESMAC.
                 <br><br> Sou de 15/09/2000, comecei em um trabalho nada haver com a area de T.I, mas dps que começei a ver e conhecer
                  pessoas da área, tive uma curiosidade e demonstrei um pequeno interesse, com o passar do tempo percebi que era oque
@@ -41,15 +64,14 @@
         </div>
         <div>
             <section id="portfolio">
-                <h2 class="padrao">Portfolio</h2>
+                <h2 class="centralizacao">Portfolio</h2>
                 <div class="projeto">
-                    <h3 class="padrao">Projeto 1</h3>
+                    <h3 class="centralizacao">Projeto 1</h3>
                     <p class="text_center">O meu primeiro projeto foi em python/tkinter, fizemos um menu uma sandubaria com cadastro, 
-                    pedidos, fazer pedido, cancelar pedido, atendimento ao cliente e reclame aqui. Mas perdi todo o codigo, vou ver se
-                     acho.</p>
+                    pedidos, fazer pedido, cancelar pedido, atendimento ao cliente e reclame aqui.</p>
                 </div>
                 <div class="projeto">
-                    <h3 class="padrao">Projeto 2</h3>
+                    <h3 class="centralizacao">Projeto 2</h3>
                     <p class="text_center">Meu site pessoal em HTML/CSS que esta sendo desenvolvido,
                      pretendo melhorar alguns quesitos e desenvolver um codigo mais elavorado.</p>
                 </div>
@@ -59,12 +81,12 @@
         <div>
             <section id="competencias">
                 <div>
-                    <h2 class="padrao"> Competencias</h2>
+                    <h2 class="centralizacao"> Competencias</h2>
                     <ul class="text_center_mini">
                         <li>Linguagem C.</li>
                         <li>Python Básico.</li>
-                        <li>HTML5 e CSS</li>
-                        <li>manutenção de computadores</li>
+                        <li>HTML5 e CSS.</li>
+                        <li>manutenção de computadores.</li>
                         <li>Conhecimento em manutenção de redes.</li>
                     </ul>
                 </div>
@@ -74,7 +96,7 @@
         <div>
             <section id="soft skill">
                 <div>
-                    <h2 class="padrao"> Soft Skill</h2>
+                    <h2 class="centralizacao"> Soft Skill</h2>
                     <ul class="text_center">
                         <li>Comunicação: Capacidade de transmitir informações de forma clara e eficaz.</li>
                         <li>Trabalho em equipe: Capacidade de colaborar efetivamente com colegas de equipe.</li>
@@ -89,7 +111,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer id="contato">
         <tr>
             <td><a href="https://www.linkedin.com/feed/" target="_blank"><img class="imagem" src="./imagens/linkedin.svg" alt=""></a></td>
             <td><a href="https://github.com/vyctorHdSA/" target="_blank"><img class="imagem" src="./imagens/github.svg" alt=""></a></td>
