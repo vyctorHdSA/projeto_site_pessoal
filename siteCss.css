@@ -9,6 +9,9 @@ header {
     color: #fff;
     padding: 20px;
 }
+.whitelink {
+    color: white;
+}
 .btn-menu{
     display: none;
 }
@@ -42,8 +45,8 @@ header {
     height: 15%;
 }
 .imagem-btn-menu{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     float: right;
 }
 .menu-mobile .btn-fechar i{
